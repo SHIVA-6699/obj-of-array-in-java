@@ -1,0 +1,42 @@
+import java.util.Scanner;
+class cla
+
+{
+    
+
+    int rollno[]=new int[5];
+    String name[]=new String[45];
+    float marks[]=new float[5];
+}
+
+class temp
+{
+    public static void main(String[] a)
+    {
+
+        Scanner scan= new Scanner(System.in);
+
+      
+        cla obj=new cla();
+        
+
+        for(int i=0;i<3;i++)
+        {
+            System.out.printf("enter rollno student no %d\n",i);
+            obj.rollno[i]=scan.nextInt();
+            System.out.printf("enter the no %dstudent name \n",i);
+            obj.name[i]=scan.nextLine();
+            System.out.printf("enter %d students marks\n",i);
+            obj.marks[i]=scan.nextFloat();
+        }
+        System.out.println("these are the resulsts");
+        for(int i=0;i<3;i++)
+        {
+           System.out.println(obj.rollno[i]);
+            System.out.println(obj.name[i]);
+            System.out.println(obj.marks[i]);
+         }
+
+        
+    }
+}
